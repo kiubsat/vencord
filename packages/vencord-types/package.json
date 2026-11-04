@@ -1,0 +1,36 @@
+{
+    "name": "@vencord/types",
+    "private": false,
+    "version": "1.15.16",
+    "description": "",
+    "types": "index.d.ts",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Vendicated/Vencord.git",
+        "directory": "packages/vencord-types"
+    },
+    "scripts": {
+        "prepublishOnly": "tsx ./prepare.ts",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "Vencord",
+    "license": "GPL-3.0-or-later",
+    "devDependencies": {
+        "@types/fs-extra": "catalog:",
+        "fs-extra": "catalog:",
+        "tsx": "catalog:"
+    },
+    "dependencies": {
+        "@types/node": "catalog:",
+        "@vencord/discord-types": "workspace:",
+        "lodash": "catalog:",
+        "moment": "catalog:",
+        "ts-pattern": "catalog:",
+        "type-fest": "catalog:"
+    },
+    "peerDependencies": {
+        "@types/react": "catalog:",
+        "@types/react-dom": "catalog:"
+    }
+}
