@@ -1,0 +1,345 @@
+.message-purger-modal {
+    background: #111111 !important;
+    color: #c8c8c8 !important;
+
+    font-family:
+        "Consolas",
+        "Cascadia Mono",
+        "Courier New",
+        monospace !important;
+
+    border-radius: 4px !important;
+}
+
+.message-purger-modal * {
+    font-family:
+        "Consolas",
+        "Cascadia Mono",
+        "Courier New",
+        monospace;
+}
+
+.message-purger-title {
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+}
+
+.message-purger-content {
+    padding: 18px 20px 20px;
+
+    background: #111111;
+    color: #c8c8c8;
+
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.message-purger-description {
+    margin-bottom: 18px;
+}
+
+.message-purger-phase {
+    margin-bottom: 5px;
+
+    color: #8f63b8;
+
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.message-purger-status {
+    margin-bottom: 12px;
+
+    color: #d0d0d0;
+    font-weight: 700;
+}
+
+.message-purger-progress {
+    width: 100%;
+    height: 10px;
+
+    background: #252525;
+
+    border-radius: 2px;
+
+    overflow: hidden;
+}
+
+.message-purger-progress-fill {
+    height: 100%;
+
+    background: #8f63b8;
+
+    transition:
+        width 150ms linear;
+}
+
+.message-purger-percent {
+    margin-top: 8px;
+
+    text-align: right;
+
+    font-size: 13px;
+
+    color: #999999;
+}
+
+.message-purger-stats {
+    margin-top: 18px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 7px;
+}
+
+.message-purger-stats div {
+    display: flex;
+    justify-content: space-between;
+
+    border-bottom: 1px solid #242424;
+
+    padding-bottom: 5px;
+}
+
+.message-purger-stats span {
+    color: #777777;
+}
+
+.message-purger-stats strong {
+    color: #d0d0d0;
+}
+
+.message-purger-warning {
+    margin-top: 16px;
+
+    padding: 10px;
+
+    background: #1b1b1b;
+
+    border-left: 3px solid #8f63b8;
+
+    color: #aaa;
+}
+
+.message-purger-info {
+    margin-top: 16px;
+
+    padding: 10px;
+
+    background: #151515;
+
+    border-left: 3px solid #444;
+
+    color: #777;
+
+    font-size: 12px;
+}
+
+.message-purger-section {
+    margin-top: 18px;
+}
+
+.message-purger-label {
+    margin-bottom: 8px;
+
+    font-weight: 700;
+
+    color: #d0d0d0;
+}
+
+.message-purger-buttons {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+}
+
+.message-purger-help {
+    margin-top: 7px;
+
+    color: #666666;
+
+    font-size: 12px;
+}
+
+.message-purger-input {
+    box-sizing: border-box;
+
+    width: 100%;
+    height: 38px;
+
+    padding: 0 10px;
+
+    background: #0b0b0b;
+
+    border: 1px solid #333333;
+
+    border-radius: 3px;
+
+    color: #d0d0d0;
+
+    outline: none;
+}
+
+.message-purger-input:focus {
+    border-color: #8f63b8;
+}
+
+.message-purger-modal input::-webkit-inner-spin-button,
+.message-purger-modal input::-webkit-outer-spin-button {
+    opacity: 1;
+}
+
+
+/* ============================================================
+ * TOOLBAR - RAPOSA
+ * ============================================================
+ */
+
+.message-purger-toolbar-button {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 58px;
+    height: 38px;
+
+    margin-right: 4px;
+
+    padding: 0;
+
+    border: 0;
+    border-radius: 4px;
+
+    background: transparent;
+
+    color: #b5bac1;
+
+    cursor: pointer;
+
+    transition:
+        background 120ms ease,
+        color 120ms ease;
+}
+
+.message-purger-toolbar-button:hover {
+    background:
+        rgba(255, 255, 255, 0.08);
+
+    color: #ffffff;
+}
+
+.message-purger-toolbar-fox {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 25px;
+    height: 25px;
+
+    font-size: 21px;
+
+    line-height: 1;
+}
+
+.message-purger-toolbar-info {
+    position: absolute;
+
+    left: 4px;
+    right: 4px;
+
+    bottom: 2px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    pointer-events: none;
+}
+
+.message-purger-toolbar-percent {
+    display: none;
+
+    font-size: 7px;
+
+    line-height: 8px;
+
+    color: #b5bac1;
+}
+
+.message-purger-toolbar-progress {
+    display: block;
+
+    width: 46px;
+    height: 3px;
+
+    overflow: hidden;
+
+    background: #303030;
+
+    border-radius: 2px;
+}
+
+.message-purger-toolbar-progress-fill {
+    display: block;
+
+    width: 0;
+    height: 100%;
+
+    background: #8f63b8;
+
+    border-radius: 2px;
+
+    transition:
+        width 180ms linear;
+}
+
+.message-purger-toolbar-status {
+    position: absolute;
+
+    top: 7px;
+
+    width: 120px;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+
+    white-space: nowrap;
+
+    text-align: center;
+
+    font-family:
+        "Consolas",
+        "Cascadia Mono",
+        "Courier New",
+        monospace;
+
+    font-size: 7px;
+
+    color: #777777;
+
+    opacity: 0;
+
+    transition:
+        opacity 120ms ease;
+
+    pointer-events: none;
+}
+
+.message-purger-toolbar-button:hover .message-purger-toolbar-status {
+    opacity: 1;
+}
+
+.message-purger-input[type="date"] {
+    color-scheme: dark;
+}
